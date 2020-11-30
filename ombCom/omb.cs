@@ -196,6 +196,17 @@ namespace ombCom
             port.WriteLine(CMD_DUMP);
         }
 
+        public void SendSystemInfo(int _cpuTemp, int _cpuLoad, int _gpuTemp, int _gpuLoad)
+        {
+            if (!port.IsOpen) return;
+            string send = CMD_TEMP;
+            send += _cpuTemp.ToString("D3");
+            send += _cpuLoad.ToString("D3");
+            send += _gpuTemp.ToString("D3");
+            send += _gpuLoad.ToString("D3");
+            port.WriteLine(send);
+        }
+
         #endregion
 
         #region Callbacks
