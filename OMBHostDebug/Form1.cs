@@ -76,5 +76,20 @@ namespace OMBHostDebug
                 //Nothing
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    omb.SetColor(listBox1.SelectedIndex, colorDialog1.Color);
+                }
+                catch
+                {
+
+                }
+            }
+        }
     }
 }

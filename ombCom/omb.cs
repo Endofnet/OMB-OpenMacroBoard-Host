@@ -54,6 +54,7 @@ namespace ombCom
                 try
                 {
                     port.Open();
+                    port.ReadExisting(); // Clear buffer
                     RequestDump();
                 }
                 catch
