@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ombCom", "ombCom\ombCom.csproj", "{100F6E34-AEB7-4B60-BE0A-FD4AF08CCDA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ombCom", "ombCom\ombCom.csproj", "{100F6E34-AEB7-4B60-BE0A-FD4AF08CCDA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMBHostDebug", "OMBHostDebug\OMBHostDebug.csproj", "{6BF8F41A-E9BF-4FC1-9785-6081145F918E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{100F6E34-AEB7-4B60-BE0A-FD4AF08CCDA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{100F6E34-AEB7-4B60-BE0A-FD4AF08CCDA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{100F6E34-AEB7-4B60-BE0A-FD4AF08CCDA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BF8F41A-E9BF-4FC1-9785-6081145F918E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF8F41A-E9BF-4FC1-9785-6081145F918E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF8F41A-E9BF-4FC1-9785-6081145F918E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF8F41A-E9BF-4FC1-9785-6081145F918E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
