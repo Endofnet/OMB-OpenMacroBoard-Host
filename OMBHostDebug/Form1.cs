@@ -58,5 +58,23 @@ namespace OMBHostDebug
                 update = false;
             }
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                listBox2.Items.Clear();
+                listBox2.Items.Add(omb.Buttons[listBox1.SelectedIndex].ButtonNumber);
+                listBox2.Items.Add(omb.Buttons[listBox1.SelectedIndex].Command);
+                listBox2.Items.Add(omb.Buttons[listBox1.SelectedIndex].LedColor.R);
+                listBox2.Items.Add(omb.Buttons[listBox1.SelectedIndex].LedColor.G);
+                listBox2.Items.Add(omb.Buttons[listBox1.SelectedIndex].LedColor.B);
+                listBox2.Items.Add(omb.Buttons[listBox1.SelectedIndex].LedEffect);
+            }
+            catch
+            {
+                //Nothing
+            }
+        }
     }
 }
