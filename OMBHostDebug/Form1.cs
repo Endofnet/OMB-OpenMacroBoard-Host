@@ -91,5 +91,20 @@ namespace OMBHostDebug
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            omb.SaveConfig();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            omb.LoadConfig();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            omb.SetStringCmd(listBox1.SelectedIndex, textBox1.Text);
+        }
     }
 }
